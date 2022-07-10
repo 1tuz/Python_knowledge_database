@@ -1,0 +1,4 @@
+pipenv install -r requierments.txt # Устанавливает зависимости
+pipenv lock -r > requirements.txt
+pipenv install package-name # устанавливает последнюю версию пакета;
+pipenv uninstall package-name # Удаление пакета
