@@ -3,7 +3,7 @@
 # более мы изменить её значение не можем.
 
 class Immutable_vars :
-    str_var = 'Hello!@123'
-    int_var = [1234, 1.3, -1]
-    tuple_var = (5, 'program', 1+3j) # Кортежи
+    str_var = 'Hello!@123' # Строка
+    int_var = [1234, 1.3, -1] # Число(int, float, complex)
+    tuple_var = (5, 'program', 1+3j) # Кортеж - похож на список, но не редактируется и быстрее.
 
