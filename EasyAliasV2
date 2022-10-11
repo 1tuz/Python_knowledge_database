@@ -28,7 +28,7 @@ while loop:
             print("Choosed '-a' flag! Alias will be created automatically from the filename and current directory")
             regular = re.findall(r'^\w+', q2)
             clear = regular[0]
-            sys(f"DIR=$(pwd) && FOL=$(pwd | sed 's:.*/::') && read {clear} && echo $FOL='bash $DIR' » .zshrc")
+            sys(f"DIR=$(pwd) && FOL=$(pwd | sed 's:.*/::') && FILE=${clear} && echo $FOL='bash $DIR/$FILE'")
             q1
 
         elif "-h" in q2:
