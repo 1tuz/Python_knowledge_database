@@ -1,9 +1,8 @@
-import re
+def factorial_recursive(n):
+    if n == 1:
+        return n
+    else:
+        return n * factorial_recursive(n - 1)
 
 
-txt = "test -a"
-regular = re.findall(r'^\w+', txt)
-print(regular[0])
-
-
-
+print(factorial_recursive(5))
