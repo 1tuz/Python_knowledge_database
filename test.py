@@ -1,8 +1,6 @@
-def factorial_recursive(n):
-    if n == 1:
-        return n
-    else:
-        return n * factorial_recursive(n - 1)
-
-
-print(factorial_recursive(5))
+cars = ["Toyota", "Tesla", "Hyundai"]
+print(len(cars))
+cars.append("Honda")
+cars.pop(1)
+for x in cars:
+    print(x)
