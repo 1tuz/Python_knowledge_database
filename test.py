@@ -1,6 +1,15 @@
-cars = ["Toyota", "Tesla", "Hyundai"]
-print(len(cars))
-cars.append("Honda")
-cars.pop(1)
-for x in cars:
-    print(x)
+def binary_search(array, target):
+    low = 0
+    high = len(array) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if array[mid] == target:
+            return mid
+        elif array[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+
+
+print(binary_search([1, 2, 3, 4, 5, ]))
